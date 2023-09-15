@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aibot-story-builder"
+version = "0.1.0"
+description = "Turn an image or text into an audio story"
+authors = ["alex00pep <alexmtnezf@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [ 
+{ include = "app", from = "src" }
+]
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.26.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
